@@ -12,6 +12,14 @@ public class Demo1 {
         System.out.println(setObjectFieldValue(new User(),11,"李郑强","123","13207036287"));
         System.out.println(setObjectFieldValue(new Student(), 11, 12, "学生一", "编程", 18));
     }
+
+    /**
+     * 动态的给对象的属性赋值（参数列表需要和对象的属性顺序一致）
+     * @param t
+     * @param objects
+     * @param <T>
+     * @return
+     */
     public  static  <T> T setObjectFieldValue(T t,Object ...objects){
         Class<?> aClass = t.getClass();
         Field[] fields = aClass.getDeclaredFields();
