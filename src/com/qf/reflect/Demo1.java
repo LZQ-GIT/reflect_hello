@@ -11,6 +11,7 @@ public class Demo1 {
     public static void main(String[] args) {
         System.out.println(setObjectFieldValue(new User(),11,"李郑强","123","13207036287"));
         System.out.println(setObjectFieldValue(new Student(), 11, 12, "学生一", "编程", 18));
+        System.out.println(setObjectFieldValue(new Student(), 11, 12, "学生二", "设计", 19));
     }
 
     /**
